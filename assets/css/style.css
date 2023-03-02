@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.main {
+    background-color: #abc1e8;
+}
+
+input[type="search"], input[type="text"], input[type="password"] {
+    border: solid 1px #2E77AE;
+    width: 90%;
+    padding: 8px 8px 5% 5%;
+    background-color: #C2E0FF;
+    color: #2E77AE;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+input[type="search"]:focus, input[type="text"]:focus, input[type="password"]:focus {
+    color: black;
+    background-color: #98CCFF;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: black;
+    outline: none;
+}
+
+h1 {
+    color: #003300;
+    margin: 0 0 0 9px;
+    letter-spacing: 0em;
+    font-weight: bold;
+}
+
+hr {
+    border-top: solid 2px #003300;
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: none;
+    color: #99cc33;
+}
+
+.header {
+    background-color: #2E77AE;
+    height: 180px;
+    font-size: 0.9em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+.logo {
+    width: 880px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo h1, .logo h1:hover {
+    font: normal 300% "centry-gothic", sans-serif;
+    color: #003300;
+    margin: 0 0 0 9px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.logo h2 {
+    font-size: 2em;
+    margin: 4px 0 0 9px;
+}
+
+.menu {
+    width: 900px;
+    height: 46px;
+    margin-top: 20px;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 0 0 0 9px;
+    margin: 1px 2px 30px 30px;
+}
+
+.menu li a {
+    font: bold 150% 'comic sans', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 6px 35px 6px 28px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    border: solid 1px #E0EAF5;
+    border-radius: 15px;
+}
+
+.menu ul li.active a, li:not(.active) a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.site_content {
+    width: 1500px;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+}
+
+.sidebar {
+    float: right;
+    width: 254px;
+    margin-bottom: 200px;
+}
+
+.author_photo {
+    float: left;
+    margin-bottom: 30px;
+    border: solid 10px #7BA4E9;
+    border-radius: 50px;
+}
+
+.block {
+    margin: 252px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border-radius: 10px;
+    background-color: #52648E;
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #C2E0FF;
+    color: #2E77AE;
+    cursor: pointer;
+    border: solid 3px #2E77AE;
+    width: 60%;
+    margin: 5px 5px 20% 20%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.button:hover {
+    color: black;
+    background-color: #98CCFF;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border-color: black;
+}
+
+.sidebar h2 {
+    color: #BDFFFC;
+}
+
+.passreg {
+    font-size: 90%;
+    margin: -15% 0 0 5%;
+}
+
+.poem {
+    margin-left: 670px;
+    margin-right: 0;
+    font-size: 26px;
+    text-align: center;
+    width: calc(100% - 1000px);
+}
+
+.poem p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 28px 0 5px 0;
+    text-align: center;
+    background-color: #2E77AE;
+    color: #003300;
+    font-size: 1em;
+}
+
+.other_authors {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 600px;
+    max-width: 75%;
+    height: 400px;
+    margin: 0 0 12.5% 12.5%;
+}
+
+.other_author {
+    position: relative;
+    overflow: hidden;
+    min-width: 120px;
+    margin: 10px;
+    background: var(--authorPhoto, var(--defaultBackground, #e6e9ed));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.other_author:nth-child(1) {
+    --defaultBackground: #ed5565;
+}
+
+.other_author:nth-child(2) {
+    --defaultBackground: #fc6e51;
+}
+
+.other_author:nth-child(3) {
+    --defaultBackground: #ffce54;
+}
+
+.other_author:nth-child(4) {
+    --defaultBackground: #2ecc71;
+}
+
+.other_author:nth-child(5) {
+    --defaultBackground: #5d9cec;
+}
+
+.other_author.active {
+    flex-grow: 10000;
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+}
+
+.other_author.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.other_author.active .info > div {
+    left: 0px;
+    opacity: 1;
+}
+
+.other_author:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.other_author:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.other_author:not(.active) .info > div {
+    left: 20px;
+    opacity: 0;
+}
+
+.other_author .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.other_author .info {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    white-space: pre;
+}
+
+.other_author .info > div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.other_author .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0);
+    transform: translateX(-50px);
+}
+
+.other_author .main a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.other_author .main:hover {
+    color: red;
+    transition: all 0.5s ease-in-out;
+    scale: 1.5;
+    transform: translateX(-150px);
+}
+
+.other_author .sub {
+    transition-delay: 0.1s;
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.other_author .sub:hover {
+    scale: 1.5;
+    transform: translateX(100px);
+}
+
+.other_poems {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.other_poems h2 {
+    text-decoration: none;
+    font: normal 200% 'centry-gothic', arial;
+    font-weight: bold;
+    color: #003300;
+}
+
+.other_poem {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.other_poem_content {
+    font: normal 100% 'comic sans', sans-serif;
+    color: #003300;
+}
+
+.other_poem_content p {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.other_poem_content .other_poem_more {
+    display: block;
+    opacity: 0;
+    height: auto;
+    max-height: 0;
+    transition: all 0.3s ease-out;
+}
+
+.other_poem_content .other_poem_more--open {
+    display: block;
+    opacity: 1;
+    height: fit-content;
+    max-height: 500px;
+    transition: all 0.5s ease-in;
+}
+
+.other_poem_content .read_more {
+    display: inline-block;
+    font: normal 140% 'centry-gothic', arial;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    color: #2E77AE;
+    background-color: #C2E0FF;
+    padding: 0.6rem 1.5rem;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border: solid 3px #2E77AE;
+    border-radius: 15px;
+}
+
+.other_poem_content .read_more:hover {
+    color: black;
+    background-color: #98CCFF;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    border-radius: 25px;
+    border-color: black;
+}
+
+.content_block {
+    padding: 15px;
+    background-color: #7BA4E9;
+    border-radius: 20px;
+}

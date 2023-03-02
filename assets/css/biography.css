@@ -1,0 +1,27 @@
+.posts {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+.posts h2 {
+    text-decoration: none;
+    font: normal 200% 'centry-gothic', arial;
+    font-weight: bold;
+    color: #003300;
+}
+
+.posts_content {
+    font: normal 100% 'trebuchet ms', sans-serif;
+    color: #003300;
+}
+
+.posts_content p {
+    padding: 0 0 20px 0;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
