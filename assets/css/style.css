@@ -1,11 +1,17 @@
+@font-face {
+    font-family: "Comic Sans MS";
+    src: url("../font/ComicSansMS.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family: "Comic Sans MS";
 }
 
 .main {
     background-color: #abc1e8;
+    min-width: 1500px;
 }
 
 input[type="search"], input[type="text"], input[type="password"] {
@@ -16,6 +22,7 @@ input[type="search"], input[type="text"], input[type="password"] {
     color: #2E77AE;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
+    font-size: 140%;
     font-weight: bold;
 }
 
@@ -62,7 +69,7 @@ a, a:hover {
 }
 
 .logo h1, .logo h1:hover {
-    font: normal 300% "centry-gothic", sans-serif;
+    font-size: 300%;
     color: #003300;
     margin: 0 0 0 9px;
     letter-spacing: 0.1em;
@@ -88,10 +95,10 @@ a, a:hover {
 }
 
 .menu li a {
-    font: bold 150% 'comic sans', sans-serif;
+    font-size: 150%;
     display: block;
     height: 20px;
-    padding: 6px 35px 6px 28px;
+    padding: 0px 35px 6px 28px;
     color: #000;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -142,7 +149,7 @@ a, a:hover {
 }
 
 .button {
-    font-size: 100%;
+    font-size: 140%;
     font-weight: bold;
     padding: 5px;
     background-color: #C2E0FF;
@@ -309,7 +316,6 @@ a, a:hover {
     color: red;
     transition: all 0.5s ease-in-out;
     scale: 1.5;
-    transform: translateX(-150px);
 }
 
 .other_author .sub {
@@ -320,19 +326,19 @@ a, a:hover {
 
 .other_author .sub:hover {
     scale: 1.5;
-    transform: translateX(100px);
+    transform: translateX(300px);
 }
 
 .other_poems {
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .other_poems h2 {
     text-decoration: none;
-    font: normal 200% 'centry-gothic', arial;
-    font-weight: bold;
+    font-size: 170%;
     color: #003300;
 }
 
@@ -346,13 +352,13 @@ a, a:hover {
 }
 
 .other_poem_content {
-    font: normal 100% 'comic sans', sans-serif;
+    font-size: 100%;
     color: #003300;
 }
 
 .other_poem_content p {
     padding: 0 0 20px 0;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .other_poem_content .other_poem_more {
@@ -373,7 +379,7 @@ a, a:hover {
 
 .other_poem_content .read_more {
     display: inline-block;
-    font: normal 140% 'centry-gothic', arial;
+    font-size: 140%;
     font-weight: bold;
     outline: none;
     text-decoration: none;
@@ -401,4 +407,10 @@ a, a:hover {
     padding: 15px;
     background-color: #7BA4E9;
     border-radius: 20px;
+}
+
+.sidebar span.block_header {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
