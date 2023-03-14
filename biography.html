@@ -22,34 +22,7 @@
                 </div>
             </div>
             <div class="site_content">
-                <div class="content_block sidebar">
-                    <div class="block" style="height: 140px;">
-                        <span class="block_header">
-                            <h2>Пошук</h2>
-                            <img src="assets/img/g.svg" style="margin-left: 10px">
-                        </span>
-                        <form id="search_form">
-                            <input type="text" id="search_field" name="search_field" placeholder="Ваш запит"/>
-                            <input type="submit" class="button" id="search_button" value="Знайти"/>
-                        </form>
-                    </div>
-                    <div class="block">
-                        <span class="block_header"><h2>Вхід</h2></span>
-                        <form id="login">
-                            <script type="text/javascript">
-                                const alertNotSupported = () => alert('Наразі відсутня підтримка реєстрації облікового запису!');
-                            </script>
-                            <input type="text" name="login_field" placeholder="Логін"/>
-                            <input type="password" name="login_field" placeholder="Пароль"/>
-                            <input type="submit" class="button" value="Увiйти" onclick="alertNotSupported()"/>
-                            <div class="passreg">
-                                <span><a onclick="alertNotSupported()" style="cursor: pointer;">Забули пароль</a></span> |
-                                <span><a onclick="alertNotSupported()" style="cursor: pointer;">Реєстрація</a></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="content">
+                <div class="primary_content">
                     <span class="content_block">
                         <h1>Біографія Максима Рильського</h1>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/2SJ7O2QgaLE" title="Максим Тадейович Рильський. Біографія за 10 хвилин" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -62,6 +35,33 @@
                                 Життєвий та творчий шлях Рильського був насиченим та тернистим.
                                 Біографія скорочено для дітей розкаже про головне у особистому житті та творчості.
                             </p>
+                        </div>
+                    </div>
+                    <div class="content_block sidebar">
+                        <div class="block" style="height: 140px;">
+                            <span class="block_header">
+                                <h2>Пошук</h2>
+                                <img src="assets/img/g.svg" style="margin-left: 10px">
+                            </span>
+                            <form id="search_form">
+                                <input type="text" id="search_field" name="search_field" placeholder="Ваш запит"/>
+                                <input type="submit" class="button" id="search_button" value="Знайти"/>
+                            </form>
+                        </div>
+                        <div class="block">
+                            <span class="block_header"><h2>Вхід</h2></span>
+                            <form id="login">
+                                <script type="text/javascript">
+                                    const alertNotSupported = () => alert('Наразі відсутня підтримка реєстрації облікового запису!');
+                                </script>
+                                <input type="text" name="login_field" placeholder="Логін"/>
+                                <input type="password" name="login_field" placeholder="Пароль"/>
+                                <input type="submit" class="button" value="Увiйти" onclick="alertNotSupported()"/>
+                                <div class="passreg">
+                                    <span><a onclick="alertNotSupported()" style="cursor: pointer;">Забули пароль</a></span> |
+                                    <span><a onclick="alertNotSupported()" style="cursor: pointer;">Реєстрація</a></span>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -21,35 +21,8 @@
                 </div>
             </div>
             <div class="site_content">
-                <img class="author_photo" src="assets/img/rylsky.jpg">
-                <div class="content_block sidebar">
-                    <div class="block" style="height: 140px;">
-                        <span class="block_header">
-                            <h2>Пошук</h2>
-                            <img src="assets/img/g.svg" style="margin-left: 10px">
-                        </span>
-                        <form id="search_form">
-                            <input type="text" id="search_field" name="search_field" placeholder="Ваш запит"/>
-                            <input type="submit" class="button" id="search_button" value="Знайти"/>
-                        </form>
-                    </div>
-                    <div class="block">
-                        <span class="block_header"><h2>Вхід</h2></span>
-                        <form id="login">
-                            <script type="text/javascript">
-                                const alertNotSupported = () => alert('Наразі відсутня підтримка реєстрації облікового запису!');
-                            </script>
-                            <input type="text" name="login_field" placeholder="Логін"/>
-                            <input type="password" name="login_field" placeholder="Пароль"/>
-                            <input type="submit" class="button" value="Увiйти" onclick="alertNotSupported()"/>
-                            <div class="passreg">
-                                <span><a onclick="alertNotSupported()" style="cursor: pointer;">Забули пароль</a></span> |
-                                <span><a onclick="alertNotSupported()" style="cursor: pointer;">Реєстрація</a></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="content">
+                <div class="primary_content">
+                    <div class="author_photo"><img src="assets/img/rylsky.jpg"></div>
                     <div class="content_block poem">
                         <p>
                             У теплі дні збирання винограду<br>
@@ -74,153 +47,180 @@
                             У теплі дні збирання винограду.
                         </p>
                     </div>
-                    <h1 style="text-align: center;">Інші вірші автора</h1>
-                    <hr>
-                    <div class="other_poems" style="align-self: center;">
-                        <div class="content_block other_poem">
-                            <h2>"Молюсь і вірю. Вітер грає..."</h2>
-                            <div class="other_poem_content">
+                    <div class="content_block sidebar">
+                        <div class="block" style="height: 140px;">
+                            <span class="block_header">
+                                <h2>Пошук</h2>
+                                <img src="assets/img/g.svg" style="margin-left: 10px">
+                            </span>
+                            <form id="search_form">
+                                <input type="text" id="search_field" name="search_field" placeholder="Ваш запит"/>
+                                <input type="submit" class="button" id="search_button" value="Знайти"/>
+                            </form>
+                        </div>
+                        <div class="block">
+                            <span class="block_header"><h2>Вхід</h2></span>
+                            <form id="login">
+                                <script type="text/javascript">
+                                    const alertNotSupported = () => alert('Наразі відсутня підтримка реєстрації облікового запису!');
+                                </script>
+                                <input type="text" name="login_field" placeholder="Логін"/>
+                                <input type="password" name="login_field" placeholder="Пароль"/>
+                                <input type="submit" class="button" value="Увiйти" onclick="alertNotSupported()"/>
+                                <div class="passreg">
+                                    <span><a onclick="alertNotSupported()" style="cursor: pointer;">Забули пароль</a></span> |
+                                    <span><a onclick="alertNotSupported()" style="cursor: pointer;">Реєстрація</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <h1 style="text-align: center;">Інші вірші автора</h1>
+                <hr>
+                <div class="other_poems" style="align-self: center;">
+                    <div class="content_block other_poem">
+                        <h2>"Молюсь і вірю. Вітер грає..."</h2>
+                        <div class="other_poem_content">
+                            <p>
+                                Молюсь і вірю. Вітер грає<br>
+                                І п'яно віє навкруги,<br>
+                                І голубів тремтячі зграї<br>
+                                Черкають неба береги.
+                            </p>
+                            <span class="other_poem_more">
                                 <p>
-                                    Молюсь і вірю. Вітер грає<br>
-                                    І п'яно віє навкруги,<br>
-                                    І голубів тремтячі зграї<br>
+                                    І ти смієшся, й даль ясніє,<br>
+                                    І серце б'ється, як в огні,<br>
+                                    І вид пречистої надії<br>
+                                    Стоїть у синій глибині.
+                                </p>
+                                <p>
+                                    Кленусь тобі, веселий світе,<br>
+                                    Кленусь тобі, моє дитя.<br>
+                                    Що буду жити, поки жити<br>
+                                    Мені дозволить дух життя!
+                                </p>
+                                <p>
+                                    Ходім! Шумлять щасливі води,<br>
+                                    І грає вітер навкруги,<br>
+                                    І голуби ясної вроди<br>
                                     Черкають неба береги.
                                 </p>
-                                <span class="other_poem_more">
-                                    <p>
-                                        І ти смієшся, й даль ясніє,<br>
-                                        І серце б'ється, як в огні,<br>
-                                        І вид пречистої надії<br>
-                                        Стоїть у синій глибині.
-                                    </p>
-                                    <p>
-                                        Кленусь тобі, веселий світе,<br>
-                                        Кленусь тобі, моє дитя.<br>
-                                        Що буду жити, поки жити<br>
-                                        Мені дозволить дух життя!
-                                    </p>
-                                    <p>
-                                        Ходім! Шумлять щасливі води,<br>
-                                        І грає вітер навкруги,<br>
-                                        І голуби ясної вроди<br>
-                                        Черкають неба береги.
-                                    </p>
-                                </span>
-                                <span class="read_more">Читати повністю</span>
-                            </div>
+                            </span>
+                            <span class="read_more">Читати повністю</span>
                         </div>
-                        <div class="content_block other_poem">
-                            <h2>"Епоху, де б душею відпочить..."</h2>
-                            <div class="other_poem_content">
+                    </div>
+                    <div class="content_block other_poem">
+                        <h2>"Епоху, де б душею відпочить..."</h2>
+                        <div class="other_poem_content">
+                            <p>
+                                Епоху, де б душею відпочить,<br> 
+                                З нас кожний має право вибирати,<br>
+                                Найдемо тут ми вибору багато<br>
+                                Народів, царста, богів, людей, століть.
+                            </p>
+                            <span class="other_poem_more">
                                 <p>
-                                    Епоху, де б душею відпочить,<br> 
-                                    З нас кожний має право вибирати,<br>
-                                    Найдемо тут ми вибору багато<br>
-                                    Народів, царста, богів, людей, століть.
+                                    Готичний присмерк, еллінську блакить,<br>
+                                    Легенд біблійних мідь, вісон і злато —<br>
+                                    Все можемо на полотні віддати<br>
+                                    Чи на папір слухняний перелить.
                                 </p>
-                                <span class="other_poem_more">
-                                    <p>
-                                        Готичний присмерк, еллінську блакить,<br>
-                                        Легенд біблійних мідь, вісон і злато —<br>
-                                        Все можемо на полотні віддати<br>
-                                        Чи на папір слухняний перелить.
-                                    </p>
-                                    <p>
-                                        Але любить чи не любити те,<br>
-                                        Що вколо нас і в нас самих росте,<br>
-                                        Що творить нас, що творимо самі ми,—
-                                    </p>
-                                    <p>
-                                        Лише сліпець, що замість крові в нім<br>
-                                        Тече чорнило струмнем неживим,<br>
-                                        Тривожиться питаннями такими.
-                                    </p>
-                                </span>
-                                <span class="read_more">Читати повністю</span>
-                            </div>
+                                <p>
+                                    Але любить чи не любити те,<br>
+                                    Що вколо нас і в нас самих росте,<br>
+                                    Що творить нас, що творимо самі ми,—
+                                </p>
+                                <p>
+                                    Лише сліпець, що замість крові в нім<br>
+                                    Тече чорнило струмнем неживим,<br>
+                                    Тривожиться питаннями такими.
+                                </p>
+                            </span>
+                            <span class="read_more">Читати повністю</span>
                         </div>
-                        <div class="content_block other_poem">
-                            <h2>ФІЛОСОФ</h2>
-                            <div class="other_poem_content">
+                    </div>
+                    <div class="content_block other_poem">
+                        <h2>ФІЛОСОФ</h2>
+                        <div class="other_poem_content">
+                            <p>
+                                В маслиновім гаю, поважною ходою,<br>
+                                Хвилясті одяги нап'явши ябияк,<br>
+                                Снують філософи, лише один закляк<br>
+                                На місці, думкою охоплений новою...
+                            </p>
+                            <span class="other_poem_more">
                                 <p>
-                                    В маслиновім гаю, поважною ходою,<br>
-                                    Хвилясті одяги нап'явши ябияк,<br>
-                                    Снують філософи, лише один закляк<br>
-                                    На місці, думкою охоплений новою...
+                                    Стоїть мов статуя. Комашка бородою<br>
+                                    Повзе гостинною, і передражник-шпак<br>
+                                    Дарма кричить йому: “Ото смішний дивак!,<br>
+                                    В гіллі вмостившися якраз над головою.
                                 </p>
-                                <span class="other_poem_more">
-                                    <p>
-                                        Стоїть мов статуя. Комашка бородою<br>
-                                        Повзе гостинною, і передражник-шпак<br>
-                                        Дарма кричить йому: “Ото смішний дивак!,<br>
-                                        В гіллі вмостившися якраз над головою.
-                                    </p>
-                                    <p>
-                                        Там сперечаються, і плетивом дрібним<br>
-                                        Лукаві запити оплутують бідаху,<br>
-                                        Що всесвіт розгадать хотів з одного маху.
-                                    </p>
-                                    <p>
-                                        Та що то! Виграшки! Та ж істина — як грім,<br>
-                                        Що душу сповнює огнем святого жаху.<br>
-                                        І з н а т и істину йому дано — не їм!
-                                    </p>
-                                </span>
-                                <span class="read_more">Читати повністю</span>
+                                <p>
+                                    Там сперечаються, і плетивом дрібним<br>
+                                    Лукаві запити оплутують бідаху,<br>
+                                    Що всесвіт розгадать хотів з одного маху.
+                                </p>
+                                <p>
+                                    Та що то! Виграшки! Та ж істина — як грім,<br>
+                                    Що душу сповнює огнем святого жаху.<br>
+                                    І з н а т и істину йому дано — не їм!
+                                </p>
+                            </span>
+                            <span class="read_more">Читати повністю</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h1 style="text-align: center;">Інші автори</h1>
+                <div class="content_block other_authors">
+                    <div class="other_author active" style='--authorPhoto:url("../img/pluzhnyk.jpg");'>
+                        <div class="label">
+                            <div class="info">
+                                <div class="main">
+                                    <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D1%83%D0%B6%D0%BD%D0%B8%D0%BA_%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Євген Плужник</a>
+                                </div>
+                                <div class="sub">1898-1936</div>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <h1 style="text-align: center;">Інші автори</h1>
-                    <div class="content_block other_authors">
-                        <div class="other_author active" style='--authorPhoto:url("../img/pluzhnyk.jpg");'>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">
-                                        <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D1%83%D0%B6%D0%BD%D0%B8%D0%BA_%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Євген Плужник</a>
-                                    </div>
-                                    <div class="sub">1898-1936</div>
+                    <div class="other_author" style='--authorPhoto:url("../img/svidzinskyy.jpg");'>
+                        <div class="label">
+                            <div class="info">
+                                <div class="main">
+                                    <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B2%D1%96%D0%B4%D0%B7%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%AE%D1%85%D0%B8%D0%BC%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Володимир Свідзінський</a>
                                 </div>
+                                <div class="sub">1885-1941</div>
                             </div>
                         </div>
-                        <div class="other_author" style='--authorPhoto:url("../img/svidzinskyy.jpg");'>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">
-                                        <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B2%D1%96%D0%B4%D0%B7%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%AE%D1%85%D0%B8%D0%BC%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Володимир Свідзінський</a>
-                                    </div>
-                                    <div class="sub">1885-1941</div>
+                    </div>
+                    <div class="other_author" style='--authorPhoto:url("../img/antonych.jpg");'>
+                        <div class="label">
+                            <div class="info">
+                                <div class="main">
+                                    <a href="https://uk.wikipedia.org/wiki/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD-%D0%86%D0%B3%D0%BE%D1%80_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%B8%D1%87" target="_blank">Богдан-Iгор Антонич</a>
                                 </div>
+                                <div class="sub">1909-1937</div>
                             </div>
                         </div>
-                        <div class="other_author" style='--authorPhoto:url("../img/antonych.jpg");'>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">
-                                        <a href="https://uk.wikipedia.org/wiki/%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD-%D0%86%D0%B3%D0%BE%D1%80_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%B8%D1%87" target="_blank">Богдан-Iгор Антонич</a>
-                                    </div>
-                                    <div class="sub">1909-1937</div>
+                    </div>
+                    <div class="other_author" style='--authorPhoto:url("../img/turianskyy.jpg");'>
+                        <div class="label">
+                            <div class="info">
+                                <div class="main">
+                                    <a href="https://uk.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%9E%D1%81%D0%B8%D0%BF_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Осип Турянський</a>
                                 </div>
+                                <div class="sub">1880-1933</div>
                             </div>
                         </div>
-                        <div class="other_author" style='--authorPhoto:url("../img/turianskyy.jpg");'>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">
-                                        <a href="https://uk.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%9E%D1%81%D0%B8%D0%BF_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Осип Турянський</a>
-                                    </div>
-                                    <div class="sub">1880-1933</div>
+                    </div>
+                    <div class="other_author" style='--authorPhoto:url("../img/malaniuk.jpg");'>
+                        <div class="label">
+                            <div class="info">
+                                <div class="main">
+                                    <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BB%D0%B0%D0%BD%D1%8E%D0%BA_%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D0%A4%D0%B8%D0%BB%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Євген Маланюк</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="other_author" style='--authorPhoto:url("../img/malaniuk.jpg");'>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">
-                                        <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BB%D0%B0%D0%BD%D1%8E%D0%BA_%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D0%A4%D0%B8%D0%BB%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Євген Маланюк</a>
-                                    </div>
-                                    <div class="sub">1897-1968</div>
-                                </div>
+                                <div class="sub">1897-1968</div>
                             </div>
                         </div>
                     </div>

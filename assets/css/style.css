@@ -12,6 +12,8 @@
 .main {
     background-color: #abc1e8;
     min-width: 1500px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 input[type="search"], input[type="text"], input[type="password"] {
@@ -53,16 +55,16 @@ a, a:hover {
 }
 
 .header {
+    width: 100%;
+    text-align: center;
     background-color: #2E77AE;
     height: 180px;
     font-size: 0.9em;
     margin-left: 0px;
     margin-right: 0px;
-    min-width: 900px;
 }
 
 .logo {
-    width: 880px;
     padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -82,9 +84,10 @@ a, a:hover {
 }
 
 .menu {
-    width: 900px;
     height: 46px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu li {
@@ -120,26 +123,22 @@ a, a:hover {
 }
 
 .site_content {
-    width: 1500px;
-    overflow: hidden;
     margin: 20px auto 0 auto;
 }
 
 .sidebar {
-    float: right;
-    width: 254px;
-    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    align-items: stretch;
 }
 
 .author_photo {
-    float: left;
-    margin-bottom: 30px;
     border: solid 10px #7BA4E9;
     border-radius: 50px;
 }
 
 .block {
-    margin: 252px;
     padding: 5%;
     margin: 0 0 16px 0;
     border-radius: 10px;
@@ -175,16 +174,15 @@ a, a:hover {
 }
 
 .passreg {
-    font-size: 90%;
+    text-align: center;
+    font-size: 150%;
     margin: -15% 0 0 5%;
 }
 
 .poem {
-    margin-left: 670px;
-    margin-right: 0;
-    font-size: 26px;
+    font-size: 150%;
     text-align: center;
-    width: calc(100% - 1000px);
+    white-space: nowrap;
 }
 
 .poem p {
@@ -206,17 +204,19 @@ a, a:hover {
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    justify-content: center;
     overflow: hidden;
-    min-width: 600px;
-    max-width: 75%;
+    max-width: 1000px;
     height: 400px;
-    margin: 0 0 12.5% 12.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .other_author {
     position: relative;
     overflow: hidden;
-    min-width: 120px;
+    width: 20%;
     margin: 10px;
     background: var(--authorPhoto, var(--defaultBackground, #e6e9ed));
     background-size: auto 120%;
@@ -247,7 +247,7 @@ a, a:hover {
 
 .other_author.active {
     flex-grow: 10000;
-    max-width: 600px;
+    max-width: 60%;
     margin: 0px;
     border-radius: 40px;
     background-size: auto 100%;
@@ -266,6 +266,7 @@ a, a:hover {
 .other_author:not(.active) {
     flex-grow: 1;
     border-radius: 30px;
+    max-width: 10%;
 }
 
 .other_author:not(.active) .label {
@@ -287,12 +288,10 @@ a, a:hover {
 }
 
 .other_author .info {
-    display: flex;
+    display: flexbox;
     flex-direction: column-reverse;
-    justify-content: center;
     margin-left: 10px;
     color: white;
-    white-space: pre;
 }
 
 .other_author .info > div {
@@ -304,7 +303,6 @@ a, a:hover {
     font-weight: bold;
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0);
-    transform: translateX(-50px);
 }
 
 .other_author .main a {
@@ -316,6 +314,7 @@ a, a:hover {
     color: red;
     transition: all 0.5s ease-in-out;
     scale: 1.5;
+    transform: translateX(300px);
 }
 
 .other_author .sub {
@@ -334,6 +333,10 @@ a, a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 75%;
+    margin: auto;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 .other_poems h2 {
@@ -344,11 +347,12 @@ a, a:hover {
 
 .other_poem {
     display: flex;
-    width: fit-content;
     height: fit-content;
     flex-direction: column;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .other_poem_content {
@@ -413,4 +417,33 @@ a, a:hover {
     display: flex;
     align-items: stretch;
     justify-content: center;
+}
+
+.primary_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.primary_content > * {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+@media screen and (width < 1595px) {
+
+    .sidebar {
+        flex-direction: row;
+        align-items: center;
+        max-width: 50%;
+    }
+    
+    .sidebar .block:nth-child(1) {
+        margin-right: 20px;
+    }
+
 }
